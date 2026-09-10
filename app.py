@@ -52,12 +52,31 @@ html_code = """
         ctx.textBaseline = "middle";
         ctx.shadowBlur = 15;
         ctx.shadowColor = color;
+// दिल के बिल्कुल बीच में Happy Birthday Disha दिखाने के लिए फंक्शन
+function drawBirthdayText(color) {
+    ctx.save();
+    ctx.fillStyle = color;
+    
+    // सुंदर फॉन्ट और स्टाइल सेट करें
+    ctx.font = "bold 22px 'Poppins', 'Segoe UI', sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    
+    // टेक्स्ट को चमक (Neon Glow) देने के लिए
+    ctx.shadowBlur = 15;
+    ctx.shadowColor = color;
+    
+    // बिल्कुल बीच (Center) में टेक्स्ट लिखना
+    ctx.fillText("Happy Birthday Disha", centerX, centerY);
+    
+    ctx.restore();
+}
 
 
         
 
-        ctx.restore();
-    }
+    
+    
 
     function animate() {
         ctx.fillStyle = "black";
