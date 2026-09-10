@@ -1,7 +1,6 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Premium Custom Couple Heart", layout="ce
 
 html_code = """
 <div style="background-color: black; display: flex; justify-content: center; align-items: center; height: 85vh; width: 100%;">
