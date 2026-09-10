@@ -1,8 +1,7 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Premium Custom Couple Heart", layout="centered")
-st.title("✨ VIP Neon Heart - Prabhat & Laxmi")
+st.set_page_config(page_title="Premium Custom Couple Heart", layout="ce
 
 html_code = """
 <div style="background-color: black; display: flex; justify-content: center; align-items: center; height: 85vh; width: 100%;">
@@ -55,15 +54,8 @@ html_code = """
         ctx.shadowBlur = 15;
         ctx.shadowColor = color;
 
-        // 1. Left Peak par PRABHAT (Exact math placement)
-        let xLeft = 16 * Math.pow(Math.sin(2.2), 3) * 12.5;
-        let yLeft = (13 * Math.cos(2.2) - 5 * Math.cos(4.4) - 2 * Math.cos(6.6) - Math.cos(8.8)) * 12.5;
-        ctx.fillText("PRABHAT", centerX + xLeft - 25, centerY - yLeft - 25);
 
-        // 2. Right Peak par LAXMI (Exact math placement)
-        let xRight = 16 * Math.pow(Math.sin(4.1), 3) * 12.5;
-        let yRight = (13 * Math.cos(4.1) - 5 * Math.cos(8.2) - 2 * Math.cos(12.3) - Math.cos(16.4)) * 12.5;
-        ctx.fillText("LAXMI", centerX + xRight + 25, centerY - yRight - 25);
+        
 
         ctx.restore();
     }
